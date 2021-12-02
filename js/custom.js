@@ -45,7 +45,7 @@ async function visveiculo(id){
 
     const dados = await fetch('visualizar.php?id=' + id);
     const resposta = await dados.json();
-    console.log(resposta);
+    //console.log(resposta);
 
     if(resposta['erro']){
         msgAlerta.innerHTML = resposta['msg'];
